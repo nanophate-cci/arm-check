@@ -7,7 +7,7 @@ jobs:
     resource_class: arm.medium
     steps:
       - checkout
-      - run: echo "test"
+      - run: echo "test"
 workflows:
   version: 2
   arm-workflow:
