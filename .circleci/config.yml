@@ -1,0 +1,16 @@
+​version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/python:3.12.0-node
+    resource_class: arm.medium
+    steps:
+      - checkout
+      - run: 
+          name: Test
+          command: echo "test"
+workflows:
+  arm-workflow:
+    jobs:
+      - test
