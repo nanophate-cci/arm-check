@@ -8,8 +8,8 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: Test
-          command: echo "test"
+          - name: Test
+          - command: echo "test"
 workflows:
   arm-workflow:
     jobs:
