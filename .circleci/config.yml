@@ -2,7 +2,8 @@
 
 jobs:
   test:
-    machine: true
+    machine:
+      image: arm-default
     resource_class: arm.medium
     steps:
       - checkout
