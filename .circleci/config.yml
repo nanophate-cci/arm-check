@@ -1,15 +1,9 @@
 ​version: 2.1
-
 jobs:
-  test:
+  build:
     machine:
-      image: arm-default
+      image: ubuntu-2204:2024.08.1
     resource_class: arm.medium
     steps:
       - checkout
       - run: echo "test"
-workflows:
-  version: 2
-  arm-workflow:
-    jobs:
-      - test
